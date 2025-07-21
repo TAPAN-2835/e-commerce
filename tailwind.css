@@ -1,0 +1,254 @@
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --cart: 0px -6px 18px 0px rgba(0, 0, 0, 0.25);
+  --display-100-demi-font-family: "Maison Neue", Helvetica;
+  --display-100-demi-font-size: 24px;
+  --display-100-demi-font-style: normal;
+  --display-100-demi-font-weight: 400;
+  --display-100-demi-letter-spacing: 0px;
+  --display-100-demi-line-height: 33.2400016784668px;
+  --display-100-font-family: "Maison Neue", Helvetica;
+  --display-100-font-size: 24px;
+  --display-100-font-style: normal;
+  --display-100-font-weight: 400;
+  --display-100-letter-spacing: 0px;
+  --display-100-line-height: 33.2400016784668px;
+  --display-100-strikethrough-font-family: "Maison Neue", Helvetica;
+  --display-100-strikethrough-font-size: 24px;
+  --display-100-strikethrough-font-style: normal;
+  --display-100-strikethrough-font-weight: 400;
+  --display-100-strikethrough-letter-spacing: 0px;
+  --display-100-strikethrough-line-height: 33.2400016784668px;
+  --display-200-font-family: "Maison Neue", Helvetica;
+  --display-200-font-size: 32px;
+  --display-200-font-style: normal;
+  --display-200-font-weight: 400;
+  --display-200-letter-spacing: 0px;
+  --display-200-line-height: 40px;
+  --display-300-font-family: "Maison Neue", Helvetica;
+  --display-300-font-size: 38px;
+  --display-300-font-style: normal;
+  --display-300-font-weight: 400;
+  --display-300-letter-spacing: 0.20000000298023224px;
+  --display-300-line-height: 53.20000076293945px;
+  --display-400-demi-font-family: "Maison Neue", Helvetica;
+  --display-400-demi-font-size: 40px;
+  --display-400-demi-font-style: normal;
+  --display-400-demi-font-weight: 400;
+  --display-400-demi-letter-spacing: 0px;
+  --display-400-demi-line-height: 48px;
+  --display-400-font-family: "Maison Neue", Helvetica;
+  --display-400-font-size: 40px;
+  --display-400-font-style: normal;
+  --display-400-font-weight: 400;
+  --display-400-letter-spacing: 0.20000000298023224px;
+  --display-400-line-height: 48px;
+  --display-500-font-family: "Maison Neue", Helvetica;
+  --display-500-font-size: 46px;
+  --display-500-font-style: normal;
+  --display-500-font-weight: 400;
+  --display-500-letter-spacing: 0.9200000166893004px;
+  --display-500-line-height: 55.20000076293945px;
+  --display-600-demi-font-family: "Maison Neue", Helvetica;
+  --display-600-demi-font-size: 54px;
+  --display-600-demi-font-style: normal;
+  --display-600-demi-font-weight: 400;
+  --display-600-demi-letter-spacing: 0px;
+  --display-600-demi-line-height: 72px;
+  --display-700-dmei-font-family: "Maison Neue", Helvetica;
+  --display-700-dmei-font-size: 64px;
+  --display-700-dmei-font-style: normal;
+  --display-700-dmei-font-weight: 400;
+  --display-700-dmei-letter-spacing: 0px;
+  --display-700-dmei-line-height: 72px;
+  --display-800-font-family: "Maison Neue", Helvetica;
+  --display-800-font-size: 70px;
+  --display-800-font-style: normal;
+  --display-800-font-weight: 400;
+  --display-800-letter-spacing: 0.20000000298023224px;
+  --display-800-line-height: 84px;
+  --display-900-demi-font-family: "Maison Neue", Helvetica;
+  --display-900-demi-font-size: 160px;
+  --display-900-demi-font-style: normal;
+  --display-900-demi-font-weight: 400;
+  --display-900-demi-letter-spacing: 0px;
+  --display-900-demi-line-height: 176px;
+  --overlay: rgba(0, 0, 0, 0.6);
+  --red: rgba(208, 2, 27, 1);
+  --text-100-demi-font-family: "Maison Neue", Helvetica;
+  --text-100-demi-font-size: 10px;
+  --text-100-demi-font-style: normal;
+  --text-100-demi-font-weight: 400;
+  --text-100-demi-letter-spacing: 0.6000000238418579px;
+  --text-100-demi-line-height: 16px;
+  --text-100-font-family: "Maison Neue", Helvetica;
+  --text-100-font-size: 10px;
+  --text-100-font-style: normal;
+  --text-100-font-weight: 400;
+  --text-100-letter-spacing: 1px;
+  --text-100-line-height: 16px;
+  --text-200-demi-font-family: "Maison Neue", Helvetica;
+  --text-200-demi-font-size: 12px;
+  --text-200-demi-font-style: normal;
+  --text-200-demi-font-weight: 400;
+  --text-200-demi-letter-spacing: 0.20000000298023224px;
+  --text-200-demi-line-height: 16px;
+  --text-200-font-family: "Maison Neue", Helvetica;
+  --text-200-font-size: 12px;
+  --text-200-font-style: normal;
+  --text-200-font-weight: 400;
+  --text-200-letter-spacing: 0.20000000298023224px;
+  --text-200-line-height: 16px;
+  --text-200-strikethrough-font-family: "Maison Neue", Helvetica;
+  --text-200-strikethrough-font-size: 12px;
+  --text-200-strikethrough-font-style: normal;
+  --text-200-strikethrough-font-weight: 400;
+  --text-200-strikethrough-letter-spacing: 0.20000000298023224px;
+  --text-200-strikethrough-line-height: 16px;
+  --text-200-underline-font-family: "Maison Neue", Helvetica;
+  --text-200-underline-font-size: 12px;
+  --text-200-underline-font-style: normal;
+  --text-200-underline-font-weight: 400;
+  --text-200-underline-letter-spacing: 0.20000000298023224px;
+  --text-200-underline-line-height: 16px;
+  --text-300-demi-font-family: "Maison Neue", Helvetica;
+  --text-300-demi-font-size: 14px;
+  --text-300-demi-font-style: normal;
+  --text-300-demi-font-weight: 400;
+  --text-300-demi-letter-spacing: 0.41999998688697815px;
+  --text-300-demi-line-height: 21px;
+  --text-300-font-family: "Maison Neue", Helvetica;
+  --text-300-font-size: 14px;
+  --text-300-font-style: normal;
+  --text-300-font-weight: 400;
+  --text-300-letter-spacing: 1.399999976158142px;
+  --text-300-line-height: 16.799999237060547px;
+  --text-300-underline-font-family: "Maison Neue", Helvetica;
+  --text-300-underline-font-size: 14px;
+  --text-300-underline-font-style: normal;
+  --text-300-underline-font-weight: 400;
+  --text-300-underline-letter-spacing: 1.399999976158142px;
+  --text-300-underline-line-height: 20px;
+  --text-400-demi-font-family: "Maison Neue", Helvetica;
+  --text-400-demi-font-size: 16px;
+  --text-400-demi-font-style: normal;
+  --text-400-demi-font-weight: 400;
+  --text-400-demi-letter-spacing: 0.20000000298023224px;
+  --text-400-demi-line-height: 24px;
+  --text-400-font-family: "Maison Neue", Helvetica;
+  --text-400-font-size: 16px;
+  --text-400-font-style: normal;
+  --text-400-font-weight: 400;
+  --text-400-letter-spacing: 0.6399999856948853px;
+  --text-400-line-height: 24px;
+  --text-400-underline-font-family: "Maison Neue", Helvetica;
+  --text-400-underline-font-size: 16px;
+  --text-400-underline-font-style: normal;
+  --text-400-underline-font-weight: 400;
+  --text-400-underline-letter-spacing: 0.6399999856948853px;
+  --text-400-underline-line-height: 24px;
+  --timberwolf: rgba(230, 222, 216, 1);
+  --white: rgba(255, 255, 255, 1);
+  --x-100: rgba(245, 244, 244, 1);
+  --x-200: rgba(221, 219, 220, 1);
+  --x-300: rgba(115, 115, 115, 1);
+  --x-400: rgba(76, 76, 75, 1);
+  --x-500: rgba(38, 38, 38, 1);
+  --x-600: rgba(0, 0, 0, 1);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}

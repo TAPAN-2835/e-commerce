@@ -1,0 +1,1 @@
+export { PromotionalBannerSection } from "./PromotionalBannerSection";
